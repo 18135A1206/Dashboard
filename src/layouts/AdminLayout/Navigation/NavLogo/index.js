@@ -18,10 +18,7 @@ const NavLogo = () => {
         <React.Fragment>
             <div className="navbar-brand header-logo">
                 <Link to="#" className="b-brand">
-                    <div className="b-bg">
-                        <i className="feather icon-trending-up" />
-                    </div>
-                    <span className="b-title">Datta Able</span>
+                    <span className="b-title">Nueve IT Solutions</span>
                 </Link>
                 <Link
                     to="#"

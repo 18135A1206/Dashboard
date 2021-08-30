@@ -52,14 +52,25 @@ const routes = [
         component: lazy(() => import('./views/auth/signup/SignUp'))
     },
     {
-        path: '*',
+        // path: '*',
         layout: AdminLayout,
-        guard: AuthGuard,
+        // guard: AuthGuard,
         routes: [
             {
                 exact: true,
                 path: '/app/dashboard/default',
                 component: lazy(() => import('./views/dashboard/DashDefault'))
+            },
+
+            {
+                exact: true,
+                path: '/basic/leaveform',
+                component: lazy(() => import('./views/ui-elements/basic/Leaveform'))
+            },
+            {
+                exact: true,
+                path: '/basic/details',
+                component: lazy(() => import('./views/ui-elements/basic/Details'))
             },
 
             {
@@ -119,12 +130,12 @@ const routes = [
                 exact: true,
                 path: '/sample-page',
                 component: lazy(() => import('./views/extra/SamplePage'))
-            },
-            {
-                path: '*',
-                exact: true,
-                component: () => <Redirect to={BASE_URL} />
             }
+            // {
+            //     path: '*',
+            //     exact: true,
+            //     component: () => <Redirect to={BASE_URL} />
+            // }
         ]
     }
 ];
