@@ -19,17 +19,16 @@ const Signin1 = () => {
                     </div>
                     <Card className="borderless text-center">
                         <Card.Body>
-                            <h4 className="mb-4">React Firebase Datta Able</h4>
+                            <h4 className="mb-4">Nueve IT Solutions</h4>
 
-                            <div className="mb-4">
+                            {/* <div className="mb-4">
                                 <i className="feather icon-unlock auth-icon" />
-                            </div>
+                            </div> */}
 
                             <FirebaseLogin />
-
                             <br />
 
-                            <p className="mb-0 text-muted">
+                            {/* <p className="mb-0 text-muted">
                                 &copy;{' '}
                                 <a target="_blank" href="https://codedthemes.com/" rel="noreferrer">
                                     CodedThemes
@@ -39,8 +38,7 @@ const Signin1 = () => {
                                     AppSeed
                                 </a>
                                 .
-                            </p>
-
+                            </p> */}
                         </Card.Body>
                     </Card>
                 </div>
