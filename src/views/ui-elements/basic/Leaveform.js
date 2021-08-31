@@ -7,6 +7,7 @@ const Leaveform = () => {
         phone: '',
         toDate: '',
         formDate: '',
+        project: '',
         reason: ''
     });
 
@@ -15,6 +16,7 @@ const Leaveform = () => {
         phoneError: '',
         toDateError: '',
         formDateError: '',
+        projectError: '',
         reasonError: ''
     });
 
@@ -74,6 +76,17 @@ const Leaveform = () => {
             : setLeavesDataError({ ...leavesDataError, reasonError: '' });
     };
 
+    let validateProject = (e) => {
+        setLeavesData({ ...leavesData, project: e.target.value });
+        // let regExp = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+        !e.target.value
+            ? setLeavesDataError({
+                  ...leavesDataError,
+                  projectError: 'Enter a Proper Reason'
+              })
+            : setLeavesDataError({ ...leavesDataError, projectError: '' });
+    };
+
     const submit = (e) => {
         e.preventDefault();
         console.log('leaves', leavesData);
@@ -122,22 +135,6 @@ const Leaveform = () => {
                 <Row>
                     <Col md={6}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>To</Form.Label>
-                            <Form.Control
-                                type="date"
-                                name="toDate"
-                                className={`${leavesDataError.toDateError.length > 0 ? 'is-invalid' : ''}`}
-                                onChange={validateToDate}
-                            />
-                            {leavesDataError.toDateError.length > 0 ? (
-                                <small className="text-danger font-weight-bold">{leavesDataError.toDateError}</small>
-                            ) : (
-                                ''
-                            )}
-                        </Form.Group>
-                    </Col>
-                    <Col md={6}>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>From</Form.Label>
                             <Form.Control
                                 type="date"
@@ -152,7 +149,39 @@ const Leaveform = () => {
                             )}
                         </Form.Group>
                     </Col>
+                    <Col md={6}>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>To</Form.Label>
+                            <Form.Control
+                                type="date"
+                                name="toDate"
+                                className={`${leavesDataError.toDateError.length > 0 ? 'is-invalid' : ''}`}
+                                onChange={validateToDate}
+                            />
+                            {leavesDataError.toDateError.length > 0 ? (
+                                <small className="text-danger font-weight-bold">{leavesDataError.toDateError}</small>
+                            ) : (
+                                ''
+                            )}
+                        </Form.Group>
+                    </Col>
                 </Row>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Project</Form.Label>
+                    <Form.Control
+                        as="textarea"
+                        name="project"
+                        onChange={validateProject}
+                        placeholder="Leave a comment here"
+                        className={`${leavesDataError.projectError.length > 0 ? 'is-invalid' : ''}`}
+                        style={{ height: '100px' }}
+                    />
+                    {leavesDataError.projectError.length > 0 ? (
+                        <small className="text-danger font-weight-bold">{leavesDataError.projectError}</small>
+                    ) : (
+                        ''
+                    )}
+                </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Reason</Form.Label>

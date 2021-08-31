@@ -67,6 +67,17 @@ const routes = [
                 path: '/basic/leaveform',
                 component: lazy(() => import('./views/ui-elements/basic/Leaveform'))
             },
+
+            {
+                exact: true,
+                path: '/basic/payslip',
+                component: lazy(() => import('./views/ui-elements/basic/payslip'))
+            },
+            {
+                exact: true,
+                path: '/basic/detailspage',
+                component: lazy(() => import('./views/ui-elements/basic/Detailspage'))
+            },
             {
                 exact: true,
                 path: '/basic/details',

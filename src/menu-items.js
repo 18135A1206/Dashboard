@@ -2,7 +2,7 @@ const menuItems = {
     items: [
         {
             id: 'navigation',
-            title: 'Navigation',
+            // title: 'Navigation',
             type: 'group',
             icon: 'icon-navigation',
             children: [
@@ -12,105 +12,120 @@ const menuItems = {
                     type: 'item',
                     url: '/app/dashboard/default',
                     icon: 'feather icon-home'
-                },
+                }
+                // {
+                //     id: 'details',
+                //     title: 'Details',
+                //     type: 'item',
+                //     url: '/basic/details',
+                //     icon: 'feather icon-home'
+                // }
+            ]
+        },
+        {
+            id: 'ui-element',
+            // title: 'UI ELEMENT',
+            type: 'group',
+            icon: 'icon-ui',
+            children: [
                 {
-                    id: 'dashboard',
-                    title: 'Leaves',
-                    type: 'item',
-                    url: '/basic/leaveform',
+                    id: 'basic',
+                    title: 'Leavesform',
+                    type: 'collapse',
+                    icon: 'feather icon-box',
+                    children: [
+                        // {
+                        //     id: 'button',
+                        //     title: 'Button',
+                        //     type: 'item',
+                        //     url: '/basic/button'
+                        // },
+                        {
+                            id: 'dashboard',
+                            title: 'Leaves',
+                            type: 'item',
+                            url: '/basic/leaveform',
 
-                    icon: 'feather icon-home'
-                },
+                            icon: 'feather icon-home'
+                        }
+
+                        // {
+                        //     id: 'badges',
+                        //     title: 'Badges',
+                        //     type: 'item',
+                        //     url: '/basic/badges'
+                        // },
+                        // {
+                        //     id: 'breadcrumb',
+                        //     title: 'Breadcrumb',
+                        //     type: 'item',
+                        //     url: '/basic/breadcrumb'
+                        // },
+                        // {
+                        //     id: 'collapse',
+                        //     title: 'Collapse',
+                        //     type: 'item',
+                        //     url: '/basic/collapse'
+                        // },
+                        // {
+                        //     id: 'tabs-pills',
+                        //     title: 'Tabs & Pills',
+                        //     type: 'item',
+                        //     url: '/basic/tabs-pills'
+                        // },
+                        // {
+                        //     id: 'typography',
+                        //     title: 'Typography',
+                        //     type: 'item',
+                        //     url: '/basic/typography'
+                        // }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'ui-forms',
+            // title: 'Forms & Tables',
+            type: 'group',
+            // icon: 'icon-group',
+            children: [
+                // {
+                //     id: 'forms',
+                //     // title: 'Forms',
+                //     type: 'item',
+                //     // url: '/forms/form-basic',
+                //     icon: 'feather icon-file-text'
+                // },
+                // {
+                //     id: 'bootstrap',
+                //     title: 'Bootstrap Table',
+                //     type: 'item',
+                //     url: '/tables/bootstrap',
+                //     icon: 'feather icon-server'
+                // }
                 {
                     id: 'payslip',
                     title: 'Payslip',
                     type: 'item',
-                    url: '/app/dashboard/default',
+                    url: '/basic/payslip',
                     icon: 'feather icon-home'
                 },
                 {
-                    id: 'Details',
+                    id: 'details',
                     title: 'Details',
                     type: 'item',
                     url: '/basic/details',
                     icon: 'feather icon-home'
+                },
+                {
+                    id: 'payslip',
+                    title: 'Detailspage',
+                    type: 'item',
+                    url: '/basic/detailspage',
+                    icon: 'feather icon-home'
                 }
             ]
         }
-        // {
-        //     id: 'ui-element',
-        //     // title: 'UI ELEMENT',
-        //     type: 'group',
-        //     icon: 'icon-ui',
-        //     children: [
-        //         {
-        //             id: 'basic',
-        //             // title: 'Components',
-        //             type: 'collapse',
-        //             // icon: 'feather icon-box',
-        //             children: [
-        //                 {
-        //                     id: 'button',
-        //                     title: 'Button',
-        //                     type: 'item',
-        //                     url: '/basic/button'
-        //                 },
-        //                 {
-        //                     id: 'badges',
-        //                     title: 'Badges',
-        //                     type: 'item',
-        //                     url: '/basic/badges'
-        //                 },
-        //                 {
-        //                     id: 'breadcrumb',
-        //                     title: 'Breadcrumb',
-        //                     type: 'item',
-        //                     url: '/basic/breadcrumb'
-        //                 },
-        //                 {
-        //                     id: 'collapse',
-        //                     title: 'Collapse',
-        //                     type: 'item',
-        //                     url: '/basic/collapse'
-        //                 },
-        //                 {
-        //                     id: 'tabs-pills',
-        //                     title: 'Tabs & Pills',
-        //                     type: 'item',
-        //                     url: '/basic/tabs-pills'
-        //                 },
-        //                 {
-        //                     id: 'typography',
-        //                     title: 'Typography',
-        //                     type: 'item',
-        //                     url: '/basic/typography'
-        //                 }
-        //             ]
-        //         }
-        //     ]
-        // },
-        // {
-        //     id: 'ui-forms',
-        //     // title: 'Forms & Tables',
-        //     type: 'group',
-        //     // icon: 'icon-group',
-        //     children: [
-        //         {
-        //             id: 'forms',
-        //             // title: 'Forms',
-        //             type: 'item',
-        //             // url: '/forms/form-basic',
-        //             icon: 'feather icon-file-text'
-        //         },
-        //         {
-        //             id: 'bootstrap',
-        //             title: 'Bootstrap Table',
-        //             type: 'item',
-        //             url: '/tables/bootstrap',
-        //             icon: 'feather icon-server'
-        //         }
-        //     ]
-        // },
         // {
         //     id: 'chart-maps',
         //     title: 'Chart & Maps',
