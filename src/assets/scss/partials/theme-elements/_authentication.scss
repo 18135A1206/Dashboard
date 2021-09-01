@@ -88,13 +88,13 @@
             &:first-child {
                 top: -100px;
                 right: -100px;
-                background: $theme-color;
+                // background: $theme-color;
             }
 
             &:last-child {
                 left: -100px;
                 bottom: -100px;
-                background: $theme-color2;
+                // background: $theme-color2;
             }
 
             &.s {
@@ -103,13 +103,13 @@
                 &:nth-child(2) {
                     top: 150px;
                     right: -150px;
-                    background: $primary-color;
+                    // background: $primary-color;
                 }
 
                 &:nth-child(3) {
                     left: -150px;
                     bottom: 150px;
-                    background: $success-color;
+                    // background: $success-color;
                 }
             }
 

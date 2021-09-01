@@ -6,6 +6,18 @@ import { FirebaseProvider } from './contexts/FirebaseContext';
 import routes, { renderRoutes } from './routes';
 import { BASENAME } from './config/constant';
 
+// import Leaveform from './Leaveform';
+
+// const Leaveform_App = () => {
+//     return (
+//         <div>
+//             <Leaveform />
+//         </div>
+//     );
+// };
+
+// export default Leaveform_App;
+
 const App = () => {
     return (
         <React.Fragment>

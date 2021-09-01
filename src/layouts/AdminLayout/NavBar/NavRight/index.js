@@ -30,11 +30,11 @@ const NavRight = () => {
             <ListGroup as="ul" bsPrefix=" " className="navbar-nav ml-auto" id="navbar-right">
                 <ListGroup.Item as="li" bsPrefix=" ">
                     <Dropdown>
-                        <Dropdown.Toggle as={Link} variant="link" to="#" id="dropdown-basic">
+                        {/* <Dropdown.Toggle as={Link} variant="link" to="#" id="dropdown-basic">
                             <i className="feather icon-bell icon" />
-                        </Dropdown.Toggle>
+                        </Dropdown.Toggle> */}
                         <Dropdown.Menu alignRight className="notification notification-scroll">
-                            <div className="noti-head">
+                            {/* <div className="noti-head">
                                 <h6 className="d-inline-block m-b-0">Notifications</h6>
                                 <div className="float-right">
                                     <Link to="#" className="m-r-10">
@@ -42,7 +42,7 @@ const NavRight = () => {
                                     </Link>
                                     <Link to="#">clear all</Link>
                                 </div>
-                            </div>
+                            </div> */}
                             <PerfectScrollbar>
                                 <ListGroup as="ul" bsPrefix=" " variant="flush" className="noti-body">
                                     <ListGroup.Item as="li" bsPrefix=" " className="n-title">
@@ -121,9 +121,9 @@ const NavRight = () => {
                 </ListGroup.Item>
                 <ListGroup.Item as="li" bsPrefix=" ">
                     <Dropdown>
-                        <Dropdown.Toggle as={Link} variant="link" to="#" className="displayChatbox" onClick={() => setListOpen(true)}>
+                        {/* <Dropdown.Toggle as={Link} variant="link" to="#" className="displayChatbox" onClick={() => setListOpen(true)}>
                             <i className="icon feather icon-mail" />
-                        </Dropdown.Toggle>
+                        </Dropdown.Toggle> */}
                     </Dropdown>
                 </ListGroup.Item>
                 <ListGroup.Item as="li" bsPrefix=" ">

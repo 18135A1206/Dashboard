@@ -20,9 +20,9 @@ const SignUp1 = () => {
                         <Row className="align-items-center">
                             <Col>
                                 <Card.Body className="text-center">
-                                    <div className="mb-4">
+                                    {/* <div className="mb-4">
                                         <i className="feather icon-user-plus auth-icon" />
-                                    </div>
+                                    </div> */}
                                     <h3 className="mb-4">Sign up</h3>
                                     <div className="input-group mb-3">
                                         <input type="text" className="form-control" placeholder="Username" />

@@ -118,142 +118,142 @@ const BasicButton = () => {
 
     const basicDropdownButton = buttonOptions.map((button) => {
         const title = button.variant;
-        return (
-            <DropdownButton
-                className="text-capitalize"
-                title={title}
-                variant={button.variant}
-                id={`dropdown-variants-${button.variant}`}
-                key={button.variant}
-            >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
-            </DropdownButton>
-        );
+        // return (
+        //     // <DropdownButton
+        //     //     className="text-capitalize"
+        //     //     title={title}
+        //     //     variant={button.variant}
+        //     //     id={`dropdown-variants-${button.variant}`}
+        //     //     key={button.variant}
+        //     // >
+        //     //     <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        //     //     <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        //     //     <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
+        //     // </DropdownButton>
+        // );
     });
 
     const splitDropdownButton = buttonOptions.map((button) => {
         const title = button.variant;
-        return (
-            <SplitButton
-                title={title}
-                variant={button.variant}
-                id={`dropdown-split-variants-${button.variant}`}
-                key={button.variant}
-                className="mr-2 mb-2 text-capitalize"
-            >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </SplitButton>
-        );
+        // return (
+        //     <SplitButton
+        //         title={title}
+        //         variant={button.variant}
+        //         id={`dropdown-split-variants-${button.variant}`}
+        //         key={button.variant}
+        //         className="mr-2 mb-2 text-capitalize"
+        //     >
+        //         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
+        //         <Dropdown.Divider />
+        //         <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+        //     </SplitButton>
+        // );
     });
 
     const basicOutlineDropdownButton = buttonOptions.map((button) => {
         const title = button.variant;
-        return (
-            <DropdownButton
-                title={title}
-                variant={'outline-' + button.variant}
-                id={`dropdown-variants-${button.variant}`}
-                key={button.variant}
-                className="text-capitalize"
-            >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
-            </DropdownButton>
-        );
+        // return (
+        //     <DropdownButton
+        //         title={title}
+        //         variant={'outline-' + button.variant}
+        //         id={`dropdown-variants-${button.variant}`}
+        //         key={button.variant}
+        //         className="text-capitalize"
+        //     >
+        //         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
+        //     </DropdownButton>
+        // );
     });
 
     const splitOutlineDropdownButton = buttonOptions.map((button) => {
         const title = button.variant;
-        return (
-            <SplitButton
-                title={title}
-                variant={'outline-' + button.variant}
-                id={`dropdown-split-variants-${button.variant}`}
-                key={button.variant}
-                className="mr-2 mb-2 text-capitalize"
-            >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </SplitButton>
-        );
+        // return (
+        //     <SplitButton
+        //         title={title}
+        //         variant={'outline-' + button.variant}
+        //         id={`dropdown-split-variants-${button.variant}`}
+        //         key={button.variant}
+        //         className="mr-2 mb-2 text-capitalize"
+        //     >
+        //         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
+        //         <Dropdown.Divider />
+        //         <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+        //     </SplitButton>
+        // );
     });
 
     const basicIconDropdownButton = buttonOnlyIconOptions.map((button) => {
         const title = <i className={button.icon} />;
-        return (
-            <DropdownButton
-                title={title}
-                variant={button.variant}
-                id={`dropdown-variants-${button.variant}`}
-                key={button.variant}
-                className="drp-icon"
-            >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
-            </DropdownButton>
-        );
+        // return (
+        //     <DropdownButton
+        //         title={title}
+        //         variant={button.variant}
+        //         id={`dropdown-variants-${button.variant}`}
+        //         key={button.variant}
+        //         className="drp-icon"
+        //     >
+        //         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
+        //     </DropdownButton>
+        // );
     });
 
     const outlineIconDropdownButton = buttonOnlyIconOptions.map((button) => {
         const title = <i className={button.icon} />;
-        return (
-            <DropdownButton
-                title={title}
-                variant={'outline-' + button.variant}
-                id={`dropdown-variants-${button.variant}`}
-                key={button.variant}
-                className="drp-icon"
-            >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
-            </DropdownButton>
-        );
+        // return (
+        //     <DropdownButton
+        //         title={title}
+        //         variant={'outline-' + button.variant}
+        //         id={`dropdown-variants-${button.variant}`}
+        //         key={button.variant}
+        //         className="drp-icon"
+        //     >
+        //         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
+        //     </DropdownButton>
+        // );
     });
 
     const basicIconDropdownRoundedButton = buttonOnlyIconOptions.map((button) => {
         const title = <i className={button.icon} />;
-        return (
-            <DropdownButton
-                title={title}
-                variant={button.variant}
-                id={`dropdown-variants-${button.variant}`}
-                key={button.variant}
-                className="drp-icon btn-rounded"
-            >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
-            </DropdownButton>
-        );
+        // return (
+        //     <DropdownButton
+        //         title={title}
+        //         variant={button.variant}
+        //         id={`dropdown-variants-${button.variant}`}
+        //         key={button.variant}
+        //         className="drp-icon btn-rounded"
+        //     >
+        //         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
+        //     </DropdownButton>
+        // );
     });
 
     const outlineIconDropdownRoundedButton = buttonOnlyIconOptions.map((button) => {
         const title = <i className={button.icon} />;
-        return (
-            <DropdownButton
-                title={title}
-                variant={'outline-' + button.variant}
-                id={`dropdown-variants-${button.variant}`}
-                key={button.variant}
-                className="drp-icon btn-rounded"
-            >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
-            </DropdownButton>
-        );
+        // return (
+        //     <DropdownButton
+        //         title={title}
+        //         variant={'outline-' + button.variant}
+        //         id={`dropdown-variants-${button.variant}`}
+        //         key={button.variant}
+        //         className="drp-icon btn-rounded"
+        //     >
+        //         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        //         <Dropdown.Item eventKey="3">Something else hear</Dropdown.Item>
+        //     </DropdownButton>
+        // );
     });
 
     return (
