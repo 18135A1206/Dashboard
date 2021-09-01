@@ -80,7 +80,7 @@ const routes = [
             },
             {
                 exact: true,
-                path: '/basic/details',
+                path: '/basic/Details',
                 component: lazy(() => import('./views/ui-elements/basic/Details'))
             },
 

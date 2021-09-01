@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import details from './Details';
-import { Form, Button, Row, Col, Container } from 'react-bootstrap';
+import { Form, Button, Row, Col, Container, Table } from 'react-bootstrap';
 
 class PaySlip extends Component {
     constructor(props) {
@@ -81,9 +81,9 @@ class PaySlip extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <div className="line">
-                    <div class="divider py-1 bg-dark"></div>
-                    {/* <div className="heading">
+                {/* <div className="line"> */}
+                <div class="divider py-1 bg-dark"></div>
+                {/* <div className="heading">
                         <h3> NUEVE IT SOLUTIONS PVT LTD </h3>
 
                         <p>3rd Floor, Kallepalli Building, </p>
@@ -96,44 +96,44 @@ class PaySlip extends Component {
                         <p>Email id: abc@gsff.com</p>
                     </div> */}
 
-                    <Container fluid="md">
-                        <Row>
-                            <Col md={{ span: 5, offset: 5 }}>
-                                <Row>
-                                    <h3>Salary slip </h3>{' '}
-                                </Row>
-                            </Col>
-                            <Col md={{ span: 5, offset: 5 }}>
-                                <Row>
-                                    Employee Name <a className="space" /> : <a className="spacen" />
-                                    {this.state.employee}
-                                </Row>
+                <Container fluid="md">
+                    <Row>
+                        <Col md={{ span: 5, offset: 5 }}>
+                            <Row>
+                                <h3>Salary slip </h3>{' '}
+                            </Row>
+                        </Col>
+                        <Col md={{ span: 5, offset: 5 }}>
+                            <Row>
+                                Employee Name <a className="space" /> : <a className="spacen" />
+                                {this.state.employee}
+                            </Row>
 
-                                <Row>
-                                    Designation <a className="desig" /> : <a className="design" />
-                                    {this.state.designation}{' '}
-                                </Row>
+                            <Row>
+                                Designation <a className="desig" /> : <a className="design" />
+                                {this.state.designation}{' '}
+                            </Row>
 
-                                <Row>
-                                    Employee ID <a className="emp" /> : <a className="empi" /> {this.state.employeeId}
-                                </Row>
+                            <Row>
+                                Employee ID <a className="emp" /> : <a className="empi" /> {this.state.employeeId}
+                            </Row>
 
-                                <Row>
-                                    Month
-                                    <a className="mon" /> :<a className="mont" />
-                                    {this.state.month}
-                                </Row>
+                            <Row>
+                                Month
+                                <a className="mon" /> :<a className="mont" />
+                                {this.state.month}
+                            </Row>
 
-                                <Row>
-                                    Year
-                                    <a className="yr" /> : <a className="yea" />
-                                    {this.state.year}{' '}
-                                </Row>
-                            </Col>
-                        </Row>
-                    </Container>
+                            <Row>
+                                Year
+                                <a className="yr" /> : <a className="yea" />
+                                {this.state.year}{' '}
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
 
-                    <div className="details">
+                {/* <div className="details">
                         <h4> Salary slip</h4>
 
                         <p>
@@ -161,9 +161,62 @@ class PaySlip extends Component {
                             <a className="yr" />: <a className="yea" />
                             {this.state.year}{' '}
                         </p>
-                    </div>
+                    </div> */}
 
-                    <div>
+                <Table bordered hover size="sm">
+                    <caption style={{ captionSide: 'bottom' }}>-The 12% PF amount will be credited to PF every month</caption>
+
+                    <thead>
+                        <tr>
+                            <th colspan="2" width="600">
+                                Earnings
+                            </th>
+                            <th colspan="2" width="600">
+                                Deductions
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic salary {this.state.basicSalary}</td>
+                            <td> {this.state.salary}</td>
+                            <td>Provident Fund{this.state.providentFund}</td>
+                            <td>1234</td>
+                        </tr>
+                        <tr>
+                            <td>HRA Allowance{this.state.hraAllowance}</td>
+                            <td>1234</td>
+                            <td>ESI{this.state.esi}</td>
+                            <td>1234</td>
+                        </tr>
+                        <tr>
+                            <td>Other Allowance{this.state.otherAllowance}</td>
+                            <td>1234</td>
+                            <td>TDS {this.state.tds}</td>
+                            <td>1234</td>
+                        </tr>
+                        <tr>
+                            <td>Conveyance Allowance {this.state.conveyanceAllowance}</td>
+                            <td>1234</td>
+                            <td> </td>
+                            <td>1234</td>
+                        </tr>
+                        <tr>
+                            <td>Total Gross pay{this.state.totalGrosspay}</td>
+                            <td>1234</td>
+                            <td>Total Deductions{this.state.totalDeductions}</td>
+                            <td>1234</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td>NET Salary{this.state.netSalary}</td>
+                            <td> </td>
+                        </tr>
+                    </tbody>
+                </Table>
+
+                {/* <div>
                         <table className="table" style={{ width: '80%' }} align="center">
                             <caption style={{ captionSide: 'bottom' }}>-The 12% PF amount will be credited to PF every month</caption>
                             <tr>
@@ -207,18 +260,44 @@ class PaySlip extends Component {
                                 <td> </td>
                             </tr>
                         </table>
-                    </div>
-                    <div>
+                    </div> */}
+                <Container fluid="md">
+                    <Row>
+                        <Col>
+                            <Row>
+                                <Col md={6}>Date: {this.state.date}</Col>
+                                <Col aria-modal={6}>Name of the bank: ICICI Bank {this.state.nameOftheBank}</Col>
+                            </Row>
+
+                            <Row>
+                                <Col md={6}>Signature of the Employee:{this.state.signatureOftheemployee}</Col>
+                            </Row>
+
+                            <Row>
+                                <Col md={6}>
+                                    <Row>
+                                        <Button variant="primary" size="sm" onClick={this.printDocument} className="print w-50">
+                                            Print
+                                        </Button>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
+
+                {/* <div>
                         <div className="date">Date: {this.state.date} </div>
                         <div className="bank"> Name of the bank: ICICI Bank {this.state.nameOftheBank}</div>
                         <div className="sig">Signature of the Employee:{this.state.signatureOftheemployee}</div>
-                    </div>
-                    <div>
+                    </div> */}
+                {/* <div>
                         <button onClick={this.printDocument} className="print">
                             Print
                         </button>
                     </div>
                 </div>
+            </div> */}
             </div>
         );
     }

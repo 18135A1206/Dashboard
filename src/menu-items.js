@@ -111,10 +111,10 @@ const menuItems = {
                     icon: 'feather icon-home'
                 },
                 {
-                    id: 'details',
+                    id: 'Details',
                     title: 'Details',
                     type: 'item',
-                    url: '/basic/details',
+                    url: '/basic/Details',
                     icon: 'feather icon-home'
                 },
                 {
@@ -124,6 +124,13 @@ const menuItems = {
                     url: '/basic/detailspage',
                     icon: 'feather icon-home'
                 }
+                // {
+                //     id: 'status',
+                //     title: 'status',
+                //     type: 'item',
+                //     url: '/basic/detailspage',
+                //     icon: 'feather icon-home'
+                // }
             ]
         }
         // {
